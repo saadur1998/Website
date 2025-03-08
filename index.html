@@ -28,9 +28,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MyResume
+  * Template Name: iPortfolio
   * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -39,38 +39,41 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header id="header">
+    <div class="d-flex flex-column">
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-detail"></i> <span>Facts</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bxl-sketch"></i> <span>Skills</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <!--<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>-->
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Saad Ur Rahman</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/saadurrahman/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/saadur1998" class="twitter"><i class="bx bxl-github"></i></a>
+          <!--<a href="https://www.instagram.com/saad.rahman.98/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
+          <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake"><i class="bi bi-mortarboard"></i></a>
+        </div>
+      </div>
 
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <!--<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>-->
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
       <h1>Saad Ur Rahman</h1>
-      <p>I'm <span class="typed" data-typed-items="Data Scientist, Data Analyst, Creative Writer, Freelancer"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/saadurrahman/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/saadur1998" class="twitter"><i class="bx bxl-github"></i></a>
-        <!--<a href="https://www.instagram.com/saad.rahman.98/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
-        <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake"><i class="bi bi-mortarboard"></i></a>
-
-      </div>
+      <p>I'm <span class="typed" data-typed-items="Data Scientist, Data Analyst, Machine Learning Engineer"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -78,18 +81,19 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Data Scientist & Analyist with a Master's degree in Data Science and Analytics from the University of Maryland, motivated to excel in challenging environments with an ambition to learn, grow and achieve. Possessing a comprehensive understanding of the latest advancements in Machine Learning, Big Data, Cloud Computing, and Generative AI. Prepared to contribute to cutting-edge research and innovation. Unwavering commitment to acquiring new skills which aligns with the personal ambition to leverage state-of-the-art Artificial Intelligence technology in pursuit of professional excellence.</p>
+          Whether you're a fellow data enthusiast, a potential employer interested in my skills, a collaborator seeking to explore projects together, or simply curious about the world of data science, I'm delighted to have you here. Take a look around to explore examples of my work and insights into the fascinating world of data science and artificial intelligence. If you have any questions or just want to connect, don't hesitate to reach out.
+          <p></p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4">
-            <img src="https://i.ibb.co/rpbTV53/me.jpg" class="img-fluid" alt="">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Data Scientist &amp; Analyst.</h3>
             <p class="fst-italic">
               In God we trust; all others must bring data.
@@ -97,355 +101,40 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>14 Nov 1998</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>School:</strong> <span>University of Maryland</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1(240) 927-8730</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>College Park,  Maryland, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>saadur1998.github.io/Website/</span></li>
+                  <li><i class="bi-chevron-right"></i> <strong>Email:</strong> <span>saadur1998@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 (240) 927-8730</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Maryland, USA</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>saadur1998@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Full-Time/Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree 1:</strong> <span>Master: Data Science & Analytics</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree 2:</strong> <span>Master: Artificial Intelligence</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Position:</strong> <span>Market Data Scientist</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Company:</strong> <span>Co-Cultured</span></li>
                 </ul>
               </div>
             </div>
             <p>
-              Welcome to my personal website! Whether you're a fellow data enthusiast, a potential employer interested in my skills, a collaborator seeking to explore projects together, or simply curious about the world of data science, I'm delighted to have you here. Take a look around to explore examples of my work and insights into the fascinating world of data science and artificial intelligence. If you have any questions or just want to connect, don't hesitate to reach out.
+              I have experience working with large datasets, advanced machine learning models, Natural Language Processing, Computer Vision, U-Net architecture, Tableau, Amazon Web Services, Google Cloud Platform, SQL, and Python Programming across various projects. Please take a look at a section of my portfolio presented below.
             </p>
-            <p><em>Indeed, data science is the art of turning data into action.</em></p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>It takes perseverance to grow and learn. Challenges often arise from what pushes us out of our comfort zones. Embracing these challenges leads to personal and professional growth. Those who are open to learning and evolving will find themselves well-equipped to navigate the ever-changing landscape of knowledge and innovation. And that is a fact.</p>
-        </div>
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-graph-up"></i>
-              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years Of Experience</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-book"></i>
-              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Years of Higher Education</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Our worth is a canvas painted with the colors of our skills and values, not always clear-cut but intricately woven nonetheless.</p>
-        </div>
-        <!--Through visualization, we can glimpse the potential and capabilities within, revealing our ability to find clarity amidst life's complexities.-->
-        <div class="row skills-content">
-          
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Data Science/Analytics <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Machine Learning <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Pandas/Numpy<i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Deep Learning/Neural Networks<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">AWS/Cloud Computing<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MS Office<i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">GitHub<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-             
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <!--<div class="row">
-          <div class="col-lg-6">-->
-            <!--<h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Saad Ur Rahman</h4>
-              <p><em>Data Science and Analytics Graduate from UMD with 3+ years of experience, seeking full-time entry-level roles.</em></p>
-              <ul>
-                <li>College Park, Prince George County, MD</li>
-                <li>(240) 927-8730</li>
-                <li>saadur1998@gmail.com</li>
-              </ul>
-            </div>-->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Data Science &amp; Analytics</h4>
-              <h5>2022 - 2023</h5>
-              <p><em>University of Maryland, College Park, MD</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Symbiosis International University, Pune, India</em></p>
-            </div>
-
-           <!-- <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item pb-0">
-              <h4>AWS Academy Cloud Foundations</h4>
-              <h5>Dec 2023</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Data Camp</h4>
-              <h5>Apr 2023</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Complete SQL Bootcamp</h4>
-              <h5>Feb 2022</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Machine Learning and Data Science</h4>
-              <h5>Aug 2021</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Python Basics and MySQL</h4>
-              <h5>Aug 2021</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>IBM: Introduction to Data Science Specialization</h4>
-              <h5>Mar 2021</h5>
-            </div> -->
-
-            <!--<h3 class="resume-title">Non-Technical Accomplishments</h3>
-            <div class="resume-item pb-0">
-              <h4>Published book - "Visions in the Fog", ISBN: 978-1-64678-958-0.</h4>
-              <h5>Dec 2019</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Captained my department's soccer team.</h4>
-              <h5>Aug 2019</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Inter-school Soccer tournament winner.</h4>
-              <h5>Jun 2015</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Ranked 8th out of 26 at the National Athletics Meet</h4>
-              <h5>Jan 2014</h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Silver medal at state level athletic competition.</h4>
-              <h5>Sep 2013</h5>
-            </div>
-
-             <h3 class="resume-title">Hobbies</h3>
-            <div class="resume-item pb-0">
-              <h4>Coding</h4>
-              <h5></h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Reading Research Papers</h4>
-              <h5></h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Creative Writing</h4>
-              <h5></h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Playing Soccer</h4>
-              <h5></h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Workout</h4>
-              <h5></h5>
-            </div>
-            <div class="resume-item pb-0">
-              <h4>Social Work</h4>
-            </div>-->
-          <!--</div>
-
-          <div class="col-lg-6">-->
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Market Data Scientist</h4>
-              <h5>Apr 2024 - Present</h5>
-              <p><em>Co-Cultured (USA) </em></p>
-              <ul>
-                <li>Leveraged Tableau for Data Visualization, creating sheets, dashboards, and stories to communicate the insights to the stakeholders efficiently.
-                <li>Independently developed the Data Warehousing Infrastructure and automated the process of ETL using Python, Web Development, AWS(Lambda, S3, RDS, API Gateway, Cloudwatch), and SQL.</li>
-                <li>Worked closely with the team to support pilot projects and initiatives.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graduate Teaching Assistant</h4>
-              <h5>Aug 2023 - Dec 2023</h5>
-              <p><em>University of Maryland-College Park (USA) </em></p>
-              <ul>
-                <li>Graded assignments and exams for 150+ undergraduate students in an web developement course and offered personalized feedback, resulting in a 15% increase in grades.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Social Media Analyst</h4>
-              <h5>Feb 2022 - Aug 2022</h5>
-              <p><em>The Chaotic Quills (India) </em></p>
-              <ul>
-                <li>Proposed and supervised its implementation of social media and events data storage using Excel and SQL.</li>
-                <li>Collaborated with a cross-functional team, streamlining the integration of technical and non-technical parts of the organization.</li>
-                <li>Centralized the data storage process, improving project coordination and reducing the process's time consumption by at least 30%.</li>
-                <li>Analyzed social media and marketing statistics, increasing the social media following by 10%.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Science and Business Analyst Intern</h4>
-              <h5>Jan 2022 - Feb 2022</h5>
-              <p><em>The Spark Foundation (Singapore) </em></p>
-              <ul>
-                <li>Developed and implemented ML models for predictions with feature selection algorithms with high accuracy.</li>
-                <li>Created data visualization graphics, translating complex data sets into comprehensive visual representations.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Science and Machine Learning Trainee</h4>
-              <h5>Feb 2021 - Sep 2021</h5>
-              <p><em>SevenMentors (India) </em></p>
-              <ul>
-                <li>Designed a GUI to collect college admission data and store it using Python, Tkinter, and MySQL.</li>
-                <li>Led a project to design predictive models for chronic kidney disease, which involved extensive data analysis and model testing to ensure accuracy and reliability</li>
-              </ul>
-            </div>       
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Data Science</li>
@@ -598,19 +287,376 @@ on the tableau to understand the various trends in the job market across the Sta
         </div>
 
       </div>
-    </section><!-- End Portfolio Section --> 
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>It takes perseverance to grow and learn. Challenges often arise from what pushes us out of our comfort zones. Embracing these challenges leads to personal and professional growth. Those who are open to learning and evolving will find themselves well-equipped to navigate the ever-changing landscape of knowledge and innovation. And that is a fact.</p>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-graph-up"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Years Of Experience</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-book"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Graduate Degrees</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Our worth is a canvas painted with the colors of our skills and values, not always clear-cut but intricately woven nonetheless.</p>
+        </div>
+        <!--Through visualization, we can glimpse the potential and capabilities within, revealing our ability to find clarity amidst life's complexities.-->
+        <div class="row skills-content">
+          
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Data Science/Analytics <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Machine Learning <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Pandas/Numpy<i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL<i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Deep Learning/Neural Networks<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">AWS/Cloud Computing<i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MS Office<i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">GitHub<i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Artificial Intelligence</h4>
+              <h5>2025 - 2026</h5>
+              <p><em>Indiana Wesleyan University, Merrillville, IN</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Master of Data Science &amp; Analytics</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>University of Maryland, College Park, MD</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Technology</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Symbiosis International University, Pune, India</em></p>
+            </div>
+
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Market Data Scientist</h4>
+              <h5>Apr 2024 - Present</h5>
+              <p><em>Co-Cultured (USA) </em></p>
+              <ul>
+                <li>Leveraged Tableau for Data Visualization, creating sheets, dashboards, and stories to communicate the insights to the stakeholders efficiently.
+                <li>Independently developed the Data Warehousing Infrastructure and automated the process of ETL using Python, Web Development, AWS(Lambda, S3, RDS, API Gateway, Cloudwatch), and SQL.</li>
+                <li>Worked closely with the team to support pilot projects and initiatives.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graduate Teaching Assistant</h4>
+              <h5>Aug 2023 - Dec 2023</h5>
+              <p><em>University of Maryland-College Park (USA) </em></p>
+              <ul>
+                <li>Graded assignments and exams for 150+ undergraduate students in an web developement course and offered personalized feedback, resulting in a 15% increase in grades.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Social Media Analyst</h4>
+              <h5>Feb 2022 - Aug 2022</h5>
+              <p><em>The Chaotic Quills (India) </em></p>
+              <ul>
+                <li>Proposed and supervised its implementation of social media and events data storage using Excel and SQL.</li>
+                <li>Collaborated with a cross-functional team, streamlining the integration of technical and non-technical parts of the organization.</li>
+                <li>Centralized the data storage process, improving project coordination and reducing the process's time consumption by at least 30%.</li>
+                <li>Analyzed social media and marketing statistics, increasing the social media following by 10%.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Data Science and Business Analyst Intern</h4>
+              <h5>Jan 2022 - Feb 2022</h5>
+              <p><em>The Spark Foundation (Singapore) </em></p>
+              <ul>
+                <li>Developed and implemented ML models for predictions with feature selection algorithms with high accuracy.</li>
+                <li>Created data visualization graphics, translating complex data sets into comprehensive visual representations.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Data Science and Machine Learning Trainee</h4>
+              <h5>Feb 2021 - Sep 2021</h5>
+              <p><em>SevenMentors (India) </em></p>
+              <ul>
+                <li>Designed a GUI to collect college admission data and store it using Python, Tkinter, and MySQL.</li>
+                <li>Led a project to design predictive models for chronic kidney disease, which involved extensive data analysis and model testing to ensure accuracy and reliability</li>
+              </ul>
+            </div>       
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- End Resume Section -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <!--<section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section>--><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <!--<section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>--><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
         </div>
 
-        <div class="row mt-1">
+        <div class="row" data-aos="fade-in">
 
-          <div class="col-lg-4">
+          <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -630,26 +676,30 @@ on the tableau to understand the various trends in the job market across the Sta
                 <p>+1 240 927 8730</p>
               </div>
 
+              <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
             </div>
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -658,7 +708,6 @@ on the tableau to understand the various trends in the job market across the Sta
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
           </div>
 
         </div>
@@ -671,27 +720,19 @@ on the tableau to understand the various trends in the job market across the Sta
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Saad Ur Rahman</h3>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/saad-ur-rahman-5b798824a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="#" class="twitter"><i class="bx bxl-github"></i></a>
-        <!--<a href="https://www.instagram.com/saad.rahman.98/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
-        <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake"><i class="bi bi-mortarboard"></i></a>
-      </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- End  Footer -->
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
