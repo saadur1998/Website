@@ -6,10 +6,10 @@ This repository contains my personal website, which showcases my work and profes
 🔗 https://saadur1998.github.io/Website/
 
 ## Features  
-- **Portfolio:** Highlights my Data Science & ML projects  
-- **Resume:** Downloadable version of my CV  
-- **Skills:** Showcases my technical and analytical expertise  
 - **Bio:** A brief introduction about me  
+- **Portfolio:** Highlights my Data Science & ML projects  
+- **Resume:** My CV  
+- **Skills:** Showcases my technical and analytical expertise  
 - **Contact Form:** Currently exploring backend solutions to make it functional  
 
 ## Tech Stack  
