@@ -157,6 +157,14 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+.nav-menu ul ul {
+  display: none;  /* Hide dropdown by default */
+}
+
+.nav-menu li.active > ul {
+  display: block;  /* Show dropdown when active */
+}
+
 .nav-menu {
   padding: 30px 0 0 0;
 }

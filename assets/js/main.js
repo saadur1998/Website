@@ -8,6 +8,23 @@
 (function() {
   "use strict";
 
+
+ document.querySelectorAll('.nav-menu .toggle-dropdown').forEach(toggle => {
+  toggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+    let parentLi = this.closest('.dropdown'); // Find the closest dropdown parent
+    let dropdownMenu = parentLi.querySelector('ul'); // Find its dropdown <ul>
+
+    if (dropdownMenu) {
+      parentLi.classList.toggle('active');
+      dropdownMenu.classList.toggle('dropdown-active');
+    }
+
+    e.stopImmediatePropagation();
+  });
+});
+
   /**
    * Easy selector helper function
    */
