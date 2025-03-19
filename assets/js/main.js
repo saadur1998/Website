@@ -294,6 +294,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         "Content-Type": "application/json"
     },
     body: JSON.stringify(formData)
+    methond: 'no-cors"
 })
 .then(response => response.json())  
 .then(result => {
