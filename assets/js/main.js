@@ -271,6 +271,45 @@
     })
   });
 
+  // ... existing code ...
+
+document.getElementById("contact-form").addEventListener("submit", async function (event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  // Hide any previously displayed messages
+  document.querySelector(".sent-message").style.display = "none";
+  document.querySelector(".error-message").style.display = "none";
+  document.querySelector(".loading").style.display = "block";
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  fetch("https://f06hdmrh0i.execute-api.us-east-1.amazonaws.com/portfolio_email_sender", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+})
+.then(response => response.json())  
+.then(result => {
+    console.log("Success:", result);
+    document.querySelector(".loading").style.display = "none";
+    document.querySelector(".sent-message").style.display = "block";
+    document.getElementById("contact-form").reset();
+})
+.catch(error => {
+    console.error("Error sending message:", error);
+    document.querySelector(".loading").style.display = "none";
+    document.querySelector(".error-message").textContent = "An error occurred: " + error.message;
+    document.querySelector(".error-message").style.display = "block";
+});
+
+  });
   /**
    * Initiate Pure Counter 
    */
