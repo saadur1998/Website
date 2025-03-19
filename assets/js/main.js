@@ -293,8 +293,8 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     headers: {
         "Content-Type": "application/json"
     },
-    body: JSON.stringify(formData)
-    method: "no-cors"
+    body: JSON.stringify(formData),
+    mode: "no-cors"
 })
 .then(response => response.json())  
 .then(result => {
