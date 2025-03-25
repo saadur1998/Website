@@ -710,8 +710,27 @@ section {
   padding-top: 40px;
 }
 
+.portfolio-details .portfolio-details-slider .swiper-slide {
+  position: relative;
+}
+
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.portfolio-details .portfolio-details-slider .image-caption {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 0 0 4px 4px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
