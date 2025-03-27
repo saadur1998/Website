@@ -165,6 +165,113 @@ h6 {
   display: block;  /* Show dropdown when active */
 }
 
+/* Portfolio Navigation Hover Preview */
+.portfolio-preview {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  padding: 15px;
+  width: 350px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  pointer-events: auto; /* Allow interaction with the preview */
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.portfolio-preview.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-preview:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-preview h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.portfolio-preview p {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 10px;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.portfolio-preview .preview-links {
+  text-align: center;
+}
+
+.portfolio-preview .preview-links a {
+  color: #fff;
+  margin: 0 5px;
+  font-size: 16px;
+  display: inline-block;
+  background: rgba(20, 157, 221, 0.8);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.portfolio-preview .preview-links a:hover {
+  background: #149ddd;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive styles for portfolio preview */
+@media (max-width: 1199px) {
+  .portfolio-preview {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: calc(100% - 40px);
+    z-index: 10000;
+  }
+  
+  .portfolio-preview img {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .portfolio-preview h4 {
+    font-size: 16px;
+  }
+  
+  .portfolio-preview p {
+    font-size: 13px;
+    max-height: 70px;
+    overflow-y: auto;
+  }
+  
+  .portfolio-preview .preview-links a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 8px;
+  }
+}
+
 .nav-menu {
   padding: 30px 0 0 0;
 }
@@ -178,6 +285,39 @@ h6 {
 .nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
+}
+
+/* Enhanced dropdown styling */
+.nav-menu .dropdown ul {
+  background: rgba(4, 11, 20, 0.95);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu .dropdown ul li a {
+  padding: 10px 20px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav-menu .dropdown ul li a:hover {
+  background: rgba(20, 157, 221, 0.2);
+  padding-left: 25px;
+}
+
+.nav-menu .dropdown ul li a:after {
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #149ddd;
+  position: absolute;
+  left: 20px;
+  bottom: 7px;
+  transition: width 0.3s ease;
+}
+
+.nav-menu .dropdown ul li a:hover:after {
+  width: calc(100% - 40px);
 }
 
 .nav-menu a,
