@@ -1338,3 +1338,12 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+/* Add styles for the dropdown chevron rotation */
+.nav-menu .dropdown .bi-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.nav-menu .dropdown.active .bi-chevron-down {
+  transform: rotate(180deg);
+}
