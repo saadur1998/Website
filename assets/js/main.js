@@ -354,6 +354,14 @@
         links: [
           { href: 'Covid.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'job-application-item': {
+        img: 'assets/img/portfolio/job.jpg',
+        title: 'Job Application Analysis',
+        description: 'Analysis of job application data with visualizations to optimize job search strategies.',
+        links: [
+          { href: 'JobApplicationAnalysis.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
