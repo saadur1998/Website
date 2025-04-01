@@ -7,21 +7,22 @@ This repository contains my personal website, which showcases my work and profes
 
 ## Features  
 - **Bio:** A brief introduction about me  
-- **Portfolio:** Highlights my Data Science & ML projects  
-- **Resume:** My CV  
-- **Skills:** Showcases my technical and analytical expertise  
-- **Contact Form:** Currently exploring backend solutions to make it functional  
+- **Portfolio:** Highlights my Data Science, ML and Applied AI projects.
+- **Portfolio Detail Pages:** Details about my individual projects.  
+- **Resume:** My CV.
+- **Skills:** Showcases my technical and analytical expertise.
+- **Contact Form:** Easy way to reach out to me directly from the website.  
 
 ## Tech Stack  
-- **Frontend:** HTML, CSS, JavaScript  
-- **Hosting:** GitHub Pages  
-- **Planned Integrations:** AWS Lambda, Postman API (for contact form)  
+- **Frontend:** HTML, CSS, JavaScript.
+- **Hosting:** GitHub Pages.
+- **Backend:** AWS SES, AWS Lambda, AWS API Gateway, FetchAPI.
 
 ## Future Enhancements  
-- Implement a functional contact form using JavaScript + AWS Lambda  
-- Optimize website performance and SEO  
-- Add a blog section for sharing insights on Data Science & ML  
-- Improve responsiveness and accessibility  
+- Optimize website performance and SEO.
+- Add a blog section for sharing insights on Data Science & ML.
+- Improve responsiveness and accessibility.
+- Add a direct Gmeet/Zoom meeting scheduler.
 
 ## How to Use  
 1. Clone this repository:  
