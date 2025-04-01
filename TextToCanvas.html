@@ -98,60 +98,72 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/text2canvas-1.png" alt="">
-                  <div class="image-caption">Text2Canvas: A text-to-image generative model using U-Ney diffusion.</div>
+                  <img src="assets/img/portfolio/text-1.png" alt="">
+                  <div class="image-caption">Text2Canvas: A text-to-image generative model using U-Net diffusion.</div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/text2canvas-2.png" alt="">
-                  <div class="image-caption">Sample generated sprite images from text prompts.</div>
+                  <img src="assets/img/portfolio/text-2.png" alt="">
+                  <div class="image-caption">Architecture of the T5 text encoder.</div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/text2canvas-3.png" alt="">
-                  <div class="image-caption">U-Ney diffusion model architecture visualization.</div>
+                  <img src="assets/img/portfolio/text-3.png" alt="">
+                  <div class="image-caption">Architecture of the U-Net diffusion model.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/text-4.png" alt="">
+                  <div class="image-caption">Visualization of loss function for each sprite.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/text-5.png" alt="">
+                  <div class="image-caption">Visualization of model performance over number of training steps.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/text-6.png" alt="">
+                  <div class="image-caption">Architecture of the Text2Canvas model deployed on HuggingFace Spaces.</div>
                 </div>
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
+        
 
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Generative AI, Diffusion Models, Text-to-Image, Deep Learning</li>
-                <li><strong>Project date</strong>: 2024</li>
+                <li><strong>Project date</strong>: June, 2024</li>
                 <li><strong>GitHub</strong>: <a href="https://github.com/saadur1998/Text2Canvas">Text2Canvas</a></li>
+                <li><strong>Live Demo</strong>: <a href="https://huggingface.co/spaces/saadr98/Text2Canvas">HuggingFace Spaces</a></li>
               </ul>
             </div>
           </div>
 
           <div class="section-title">
             <h2>Introduction</h2>
-            <p>Text2Canvas is an innovative text-to-image generative model specifically designed to create sprite-like images from textual descriptions. The project leverages the U-Ney diffusion model architecture, which combines the strengths of U-Net and diffusion techniques to generate high-quality pixel art images based on text prompts.</p>
+            <p>Text2Canvas is an AI-powered service developed for MSML/DATA612 at the University of Maryland that employees deep learning methods to translate text prompts into sprite/pixel art. This project aims to replicate emerging text-to-image models by creating a lighter, less complex version focused specifically on sprite/pixel art generation.</p>
             <br>
-              <ul>
-                  <li>Specialized in generating sprite/pixel art from text descriptions</li>
-                  <li>Built on U-Ney diffusion model architecture</li>
-                  <li>Streamlit-based user interface for easy interaction</li>
-                  <li>Optimized for creating game-ready sprite assets</li>
-                  <li>Trained on sprite/pixel art datasets</li>
-              </ul>
+            <p>The human brain relies heavily on visual feedback and responds better to visuals compared to text. Visual data is more informative, alluring, and reduces the chances of misunderstanding or false interpretation. Text2Canvas bridges the gap between written content and visual artistry, enabling users to transform their textual ideas into visual masterpieces.</p>
 
-              <p>The project demonstrates the practical application of generative AI in creative content production, particularly for game development and digital art creation.</p>
             </div>
 
           <div class="section-title">
             <h2>Objective</h2>
-            <p>The primary objective of Text2Canvas was to develop a specialized text-to-image generator focused on sprite creation. The project aimed to:</p>
+            <p>The primary objective of Text2Canvas was to develop a text-to-image generator that seamlessly translates textual descriptions into visually captivating and accurate images. However, during our work, we faced significant resource constraints.</p>
+            <p>Our refined objectives were to:</p>
             <ul>
-              <li>Create a model capable of generating game-ready sprite assets from textual descriptions</li>
-              <li>Implement the U-Ney diffusion architecture for pixel art generation</li>
+              <li>Create a model capable of generating sprite images based on feature vectors</li>
+              <li>Specialize in generating sprite/pixel art from text descriptions</li>
+              <li>Implement U-Net diffusion model architecture for sprite generation</li>
               <li>Develop a user-friendly interface for designers and developers</li>
               <li>Optimize the generation process for sprite-specific aesthetics</li>
-              <li>Provide a tool that could assist game developers in rapid asset creation</li>
+              <li>Deploy the solution in a cloud environment for easy accessibility</li>
             </ul>
           </div>
 
@@ -159,15 +171,16 @@
             <h2>Process</h2>
             <p>The development of Text2Canvas involved several key phases:</p>
             <ul>
-              <li>Research: Studied diffusion models and their application to specialized image generation</li>
-              <li>Architecture Design: Implemented the U-Ney diffusion model architecture</li>
-              <li>Dataset Preparation: Collected and processed sprite/pixel art images with corresponding text descriptions</li>
-              <li>Model Training: Trained the model on specialized datasets focusing on sprite aesthetics</li>
-              <li>Feature Extraction: Developed the text feature to sprite conversion pipeline</li>
-              <li>UI Development: Created a Streamlit-based user interface for easy interaction</li>
-              <li>Optimization: Fine-tuned parameters for quality sprite generation</li>
-              <li>Evaluation: Assessed generated images for quality, fidelity to prompts, and usability as game assets</li>
-              <li>Deployment: Packaged the application for easy access and usage</li>
+              <li><strong>Deep Learning Research:</strong> Studied diffusion models including T5 text encoders and U-Net architectures for image generation</li>
+              <li><strong>Dataset Acquisition:</strong> Integrated the Character Animation Dataset from v7labs.com, containing 672 sprites with 120,000 total images</li>
+              <li><strong>MinImagen Implementation:</strong> First attempted to create a minimal version of Google's Imagen model, which faced challenges with model stability and computational resources</li>
+              <li><strong>Sprite Generation Development:</strong> Pivoted to implementing a Denoising Diffusion Probabilistic Model (DDPM) specifically for sprite generation</li>
+              <li><strong>Neural Network Design:</strong> Created a U-Net architecture that takes 16x16x3 images as input along with time steps and context vectors</li>
+              <li><strong>Model Training:</strong> Trained for 100 epochs with batch size of 100, learning rate of 1e-3, using Adam optimizer and linear learning rate decay</li>
+              <li><strong>MLOps Implementation:</strong> Used Weights and Biases to manage models, track training runs, and log hyperparameters</li>
+              <li><strong>System Architecture:</strong> Designed a two-module system offering Text-to-Image and Feature-to-Sprite generation options</li>
+              <li><strong>Cloud Deployment:</strong> Deployed the final system on HuggingFace Spaces for 24/7 availability</li>
+              <li><strong>Testing and Refinement:</strong> Evaluated model performance and refined parameters for optimal results</li>
             </ul>
           </div>
           
@@ -175,32 +188,47 @@
             <h2>Tools and Technologies</h2>
             <p>The project utilized a comprehensive set of tools and technologies:</p>
             <br>
-            <p>Programming and Frameworks:</p>
+            <p>Platforms:</p>
             <ul>
-              <li>Python as the primary programming language</li>
-              <li>PyTorch for deep learning model implementation</li>
-              <li>Streamlit for the web application interface</li>
-              <li>Hugging Face libraries for model deployment</li>
+              <li>HuggingFace Spaces</li>
+              <li>Google Colab</li>
+              <li>VS Code</li>
+              <li>Git/GitHub</li>
+              <li>Weights and Biases</li>
             </ul>
+            <p>Programming Language:</p>
+            <ul>
+              <li>Python</li>
+            </ul>
+            <p>Libraries:</p>
+            <ul>
+              <li>PyTorch/Torch</li>
+              <li>torchvision</li>
+              <li>tqdm</li>
+              <li>wandb</li>
+              <li>matplotlib</li>
+              <li>IPython</li>
+              <li>torchvision</li>
+              <li>numpy</li>
+              <li>pathlib</li>
+              <li>IPython.display</li>
+            </ul>
+     
             <p>Model Architecture:</p>
             <ul>
               <li>U-Net diffusion model (combining U-Net with diffusion techniques)</li>
-              <li>Text encoder for processing textual descriptions</li>
+              <li>T5 text encoder for processing textual descriptions</li>
+              <li>Denoising Diffusion Probabilistic Model (DDPM) algorithm</li>
               <li>Feature-to-sprite conversion pipeline</li>
             </ul>
-            <p>Development Tools:</p>
-            <ul>
-              <li>VS Code for development environment</li>
-              <li>Git/GitHub for version control</li>
-              <li>Python virtual environments for dependency management</li>
-            </ul>
           </div>
-
           <div class="section-title">
-            <h2>Applications and Future Work</h2>
-            <p>Text2Canvas has significant applications in game development, digital art creation, and educational contexts:</p>
+            <h2>Advancing Creative AI through Generative Models</h2>
+            <p>Text2Canvas demonstrates the practical application of generative AI in creative content production, particularly for game development and digital art creation. Despite resource limitations, we successfully developed a system that enables users to generate sprites based on feature vectors.</p>
             <br>
-            <p>The project provides a specialized tool for game developers looking to rapidly prototype visual assets based on textual descriptions. By focusing specifically on sprite art, Text2Canvas fills a niche in the generative AI space that general text-to-image models don't adequately address. Future development plans include enhancing the model with animation capabilities, expanding the training dataset for more diverse sprite generation, and implementing additional style controls for more precise outputs.</p>
+            <p>The project's significance lies in its approach to making generative AI more accessible and specialized. By focusing on sprite generation, we created a tool that addresses specific needs in game development and digital art creation. The implementation of diffusion models on resource-constrained platforms showcases how advanced AI can be adapted for practical use cases without requiring enterprise-level infrastructure.</p>
+            <br>
+            <p>Future development plans include enhancing the model with animation capabilities, expanding the training dataset for more diverse sprite generation, implementing additional style controls for more precise outputs, and improving the quality and resolution of generated images with access to better computational resources.</p>
           </div>
         </div>
 
