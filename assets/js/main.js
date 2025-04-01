@@ -362,6 +362,14 @@
         links: [
           { href: 'JobApplicationAnalysis.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'text2canvas-item': {
+        img: 'assets/img/portfolio/text.jpg',
+        title: 'Text2Canvas',
+        description: 'Prompt-to-image generation model built by implementing a diffusion model(U-Net) & NLP and deployed on HuggingFace Space.',
+        links: [
+          { href: 'TextToCanvas.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
