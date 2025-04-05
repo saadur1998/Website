@@ -370,6 +370,14 @@
         links: [
           { href: 'TextToCanvas.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'recommendation-system-item': {
+        img: 'assets/img/portfolio/portfolio-2.jpg',
+        title: 'Recommendation Systems',
+        description: 'Netflix movie recommendation models using NLP and Scikit-Learn.',
+        links: [
+          { href: 'RecommendationSystem.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
