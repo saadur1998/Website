@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CIFAR-10 Feature Extraction</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Saad Ur Rahman</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/saadurrahman/" class="linkedin" title="Connect with me on LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/saadur1998" class="twitter" title="Check out my GitHub repositories"><i class="bx bxl-github"></i></a>
+          <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake" title="View my profile on Handshake"><i class="bi bi-mortarboard"></i></a>
+          <a href="https://www.amazon.com/Visions-Fog-Glimpse-into-Heart/dp/164678958X" class="amazon" title="Read my poetry book on Amazon"><i class="bx bxl-amazon"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li class="dropdown"><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="WebBuilder.html" data-portfolio-id="webbuilder-item">WebBuilder 1.0</a></li>
+                <li><a href="CrimeDataAnalysis.html" data-portfolio-id="crime-data-item">Crime Data Analysis</a></li>
+                <li><a href="DriveBerry.html" data-portfolio-id="driveberry-item">DriveBerry</a></li>
+                <li><a href="Covid.html" data-portfolio-id="covid-item">COVID-19 Radiography</a></li>
+                <li><a href="JobApplicationAnalysis.html" data-portfolio-id="job-application-item">Job Application Analysis</a></li>
+                <li><a href="TextToCanvas.html" data-portfolio-id="text2canvas-item">Text2Canvas</a></li>
+                <li><a href="RecommendationSystem.html" data-portfolio-id="recommendation-system-item">Recommendation Systems</a></li>
+              </ul>
+            </li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bx bxl-graphql"></i> <span>Skills</span></a></li>
+          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>CIFAR-10 Feature Extraction</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cifar-1.png" alt="">
+                  <div class="image-caption">Sample images from the CIFAR-10 dataset, showing 10 object categories like animals and vehicles.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cifar-2.png" alt="">
+                  <div class="image-caption">Visualizations of early CNN filters, highlighting sparse class-specific activations.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cifar-3.png" alt="">
+                  <div class="image-caption">Custom PyTorch training loop with accuracy and validation tracking.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cifar-4.png" alt="">
+                  <div class="image-caption">t-SNE projection of CNN embeddings with well-separated CIFAR-10 classes.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/cifar-5.png" alt="">
+                  <div class="image-caption">t-SNE projection showing overlapping classes, indicating lower separability.</div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Machine Learning, Computer Vision, Image Classification, Feature Extraction</li>
+                <li><strong>Project date</strong>: June, 2023</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/saadur1998/CIFAR-10">CIFAR-10</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2>Introduction</h2>
+            <p>This project focuses on image classification and feature extraction techniques applied to the CIFAR-10 dataset using PyTorch. The CIFAR-10 dataset is a benchmark in computer vision, consisting of 60,000 32x32 color images across 10 different classes (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck).</p>
+            <br>
+            <p>The project demonstrates how convolutional neural networks (CNNs) can be leveraged for both classification tasks and feature extraction. Beyond simply classifying images, the feature extraction component reveals what patterns and representations the network learns at different layers, providing insights into how deep learning models "perceive" visual information.</p>
+          </div>
+
+          <div class="section-title">
+            <h2>Objective</h2>
+            <p>The primary objectives of this project were to:</p>
+            <ul>
+              <li>Develop a convolutional neural network architecture for effective image classification on the CIFAR-10 dataset</li>
+              <li>Extract meaningful features from intermediate layers of the network to understand learned representations</li>
+              <li>Visualize these features using dimensionality reduction techniques to gain insights into the model's decision-making</li>
+              <li>Implement data augmentation strategies to improve model generalization</li>
+              <li>Analyze per-class performance to identify strengths and weaknesses of the model</li>
+              <li>Compare different optimization techniques and hyperparameter settings for optimal performance</li>
+              <li>Create a reusable framework for both classification and feature extraction tasks</li>
+              <li>Demonstrate the value of feature extraction in understanding deep learning models</li>
+            </ul>
+          </div>
+
+          <div class="section-title">
+            <h2>Process</h2>
+            <p>The development of this project involved several key phases:</p>
+            <ul>
+              <li><strong>Dataset Preparation:</strong> Loaded the CIFAR-10 dataset using PyTorch's torchvision library and applied normalization transforms to prepare images for training</li>
+              <li><strong>Data Visualization:</strong> Created functions to display and analyze sample images from the dataset to understand the classification challenge</li>
+              <li><strong>CNN Architecture Design:</strong> Developed a convolutional neural network with multiple convolutional layers, max pooling layers, and fully connected layers for classification</li>
+              <li><strong>Training Pipeline Setup:</strong> Implemented a training loop with cross-entropy loss and SGD optimizer with momentum</li>
+              <li><strong>Model Training:</strong> Trained the model over multiple epochs with batch processing, monitoring the loss reduction over time</li>
+              <li><strong>Model Evaluation:</strong> Assessed the model's performance on the test set and calculated overall accuracy metrics</li>
+              <li><strong>Per-Class Analysis:</strong> Analyzed classification accuracy for each individual class to identify strengths and weaknesses</li>
+              <li><strong>Feature Map Extraction:</strong> Extracted activations from intermediate layers of the network to visualize learned features</li>
+              <li><strong>Feature Visualization:</strong> Applied dimensionality reduction techniques (PCA, t-SNE) to visualize high-dimensional feature spaces</li>
+              <li><strong>Activation Maximization:</strong> Implemented techniques to find input patterns that maximize specific neuron activations</li>
+              <li><strong>Filter Visualization:</strong> Visualized convolutional filters to understand what patterns each filter is detecting</li>
+              <li><strong>Class Activation Mapping:</strong> Implemented CAM techniques to highlight image regions most influential for classification</li>
+              <li><strong>Hyperparameter Tuning:</strong> Experimented with different learning rates, batch sizes, and model architectures</li>
+              <li><strong>Performance Optimization:</strong> Refined the model architecture and training process to improve accuracy</li>
+              <li><strong>Comparative Analysis:</strong> Evaluated different feature extraction approaches to identify the most insightful methods</li>
+            </ul>
+          </div>
+          
+          <div class="section-title">
+            <h2>Tools and Technologies</h2>
+            <p>This project leveraged a comprehensive set of tools and technologies:</p>
+            <br>
+            <p>Platforms:</p>
+            <ul>
+              <li>Google Colab (primary development environment)</li>
+              <li>Jupyter Notebook</li>
+              <li>GitHub (version control and project hosting)</li>
+            </ul>
+            <p>Programming Language:</p>
+            <ul>
+              <li>Python 3.x</li>
+            </ul>
+            <p>Libraries:</p>
+            <ul>
+              <li>PyTorch</li>
+              <li>torchvision</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>scikit-learn</li>
+              <li>Pandas</li>
+              <li>PIL/Pillow</li>
+            </ul>
+     
+            <p>Techniques and Algorithms:</p>
+            <ul>
+              <li>Convolutional Neural Networks (CNNs)</li>
+              <li>Principal Component Analysis (PCA)</li>
+              <li>t-Distributed Stochastic Neighbor Embedding (t-SNE)</li>
+              <li>Class Activation Mapping (CAM)</li>
+              <li>Transfer Learning</li>
+              <li>Gradient-Based Optimization</li>
+              <li>Data Augmentation</li>
+              <li>Feature Visualization</li>
+            </ul>
+          </div>
+          <div class="section-title">
+            <h2>Understanding Deep Learning Through Feature Extraction</h2>
+            <p>This project demonstrates the power of feature extraction in demystifying convolutional neural networks. By visualizing the features learned at different layers, we gain valuable insights into how CNNs process and interpret visual information.</p>
+            <br>
+            <p>The classification results showed varying accuracy across different classes, with the model achieving approximately 54% overall accuracy on the test set. Some classes like automobiles and trucks were more consistently recognized (70-75% accuracy), while others like cats and deer proved more challenging (24-30% accuracy). These performance differences highlight the varying complexity of visual patterns across different object categories.</p>
+            <br>
+            <p>Through feature extraction and visualization, we observed how the network progressively builds more complex representations: early layers detect simple edges and textures, middle layers identify more structured patterns and shapes, while deeper layers capture high-level object parts. This hierarchical representation learning is fundamental to the success of deep learning in computer vision tasks.</p>
+            <br>
+            <p>The project serves as both a practical implementation of image classification and a window into the inner workings of neural networks, demonstrating how feature extraction can bridge the gap between black-box models and interpretable AI.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
