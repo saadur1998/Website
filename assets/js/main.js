@@ -9,19 +9,46 @@
   "use strict";
 
 
- document.querySelectorAll('.nav-menu .toggle-dropdown').forEach(toggle => {
-  toggle.addEventListener('click', function (e) {
+ document.querySelectorAll('.nav-menu .dropdown .bi-chevron-down, .nav-menu .dropdown .bi-chevron-up').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
     e.preventDefault();
+    e.stopPropagation();
     
-    let parentLi = this.closest('.dropdown'); // Find the closest dropdown parent
-    let dropdownMenu = parentLi.querySelector('ul'); // Find its dropdown <ul>
-
+    // Find the dropdown parent
+    const dropdownParent = this.closest('.dropdown');
+    
+    // Toggle the dropdown active class
+    dropdownParent.classList.toggle('active');
+    
+    // Toggle the icon between down and up
+    if (dropdownParent.classList.contains('active')) {
+      this.classList.remove('bi-chevron-down');
+      this.classList.add('bi-chevron-up');
+    } else {
+      this.classList.remove('bi-chevron-up');
+      this.classList.add('bi-chevron-down');
+    }
+    
+    // Toggle the dropdown menu
+    const dropdownMenu = dropdownParent.querySelector('ul');
     if (dropdownMenu) {
-      parentLi.classList.toggle('active');
       dropdownMenu.classList.toggle('dropdown-active');
     }
+  });
+});
 
-    e.stopImmediatePropagation();
+// Make the parent links function normally when clicked (except for the icon)
+document.querySelectorAll('.nav-menu .dropdown > a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Only handle the click if it's directly on the link (not on the icon)
+    if (!e.target.classList.contains('bi-chevron-down') && 
+        !e.target.classList.contains('bi-chevron-up')) {
+      // Let the link function normally (navigate to the href target)
+      // Do not prevent default
+    } else {
+      // If the click was on the icon, prevent link navigation
+      e.preventDefault();
+    }
   });
 });
 
