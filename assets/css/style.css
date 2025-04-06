@@ -1339,11 +1339,45 @@ section {
   }
 }
 
-/* Add styles for the dropdown chevron rotation */
-.nav-menu .dropdown .bi-chevron-down {
-  transition: transform 0.3s ease;
+/* Style for dropdown icons - using icon swap instead of rotation */
+.nav-menu .dropdown .bi-chevron-down,
+.nav-menu .dropdown .bi-chevron-up {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
 }
 
-.nav-menu .dropdown.active .bi-chevron-down {
-  transform: rotate(180deg);
+/* Dropdown menu display */
+.nav-menu .dropdown {
+  display: block;
 }
+
+.nav-menu .dropdown ul {
+  position: static;
+  display: none;
+  z-index: 99;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  background-color: #040b14;
+  border: 1px solid rgba(39, 40, 41, 0.1);
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-menu .dropdown>.dropdown-active {
+  display: block;
+  background-color: rgba(33, 37, 41, 0.03);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
