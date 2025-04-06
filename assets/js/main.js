@@ -378,6 +378,14 @@
         links: [
           { href: 'RecommendationSystem.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'feature-extraction-item': {
+        img: 'assets/img/portfolio/portfolio-5.jpg',
+        title: 'Feature Extraction & Classification',
+        description: 'PyTorch-based image classification on CIFAR-10 dataset with optimized models.',
+        links: [
+          { href: 'FeatureExtraction.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
