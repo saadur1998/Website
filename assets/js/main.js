@@ -413,6 +413,14 @@ document.querySelectorAll('.nav-menu .dropdown > a').forEach(link => {
         links: [
           { href: 'FeatureExtraction.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'databot-item': {
+        img: 'assets/img/portfolio/portfolio-8.jpg',
+        title: 'OpenAI DataBot',
+        description: 'Langchain-based chatbot using Retrieval Augmented Generation for data analysis.',
+        links: [
+          { href: 'DataBot.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
