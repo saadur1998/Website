@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C03X9XY459"></script>
@@ -15,7 +16,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>OpenAI DataBot</title>
+  <title>Kuzushiji-MNIST Classification</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -74,6 +75,7 @@
                 <li><a href="RecommendationSystem.html" data-portfolio-id="recommendation-system-item">Recommendation Systems</a></li>
                 <li><a href="FeatureExtraction.html" data-portfolio-id="feature-extraction-item">Feature Extraction</a></li>
                 <li><a href="DataBot.html" data-portfolio-id="databot-item">OpenAI DataBot</a></li>
+                <li><a href="ImageClassification.html" data-portfolio-id="image-classification-item">Kuzushiji-MNIST Classification</a></li>
               </ul>
             </li>
           <li><a href="index.html#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
@@ -100,7 +102,7 @@
           <h2>Portfolio Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>OpenAI DataBot</li>
+            <li>Kuzushiji-MNIST Classification</li>
           </ol>
         </div>
 
@@ -118,13 +120,18 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/databot-1.png" alt="">
-                  <div class="image-caption">Streamlit interface for the OpenAI DataBot application showing the sidebar form and main display area.</div>
+                  <img src="assets/img/portfolio/kuzushiji-1.png" alt="">
+                  <div class="image-caption">Visualization of Kuzushiji-MNIST Japanese character samples with their corresponding labels.</div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/databot-2.png" alt="">
-                  <div class="image-caption">A screenshot of a section of the application code.</div>
+                  <img src="assets/img/portfolio/kuzushiji-2.png" alt="">
+                  <div class="image-caption">Comparison of dimensionality reduction techniques showing PCA vs Kernel PCA visualization.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kuzushiji-3.png" alt="">
+                  <div class="image-caption">Confusion matrix showing the classification results of the optimal model.</div>
                 </div>
 
               </div>
@@ -137,10 +144,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Data Analysis, AI, Natural Language Processing, LLM Applications</li>
-                <li><strong>Project date</strong>: April, 2023</li>
-                <li><strong>GitHub</strong>: <a href="https://github.com/saadur1998/DataBot">OpenAI DataBot</a></li>
-                <li><strong>Demo</strong>: <a href="https://huggingface.co/spaces/saadr98/DataBot">HuggingFace Space</a></li>
+                <li><strong>Category</strong>: Machine Learning, Computer Vision, Dimensionality Reduction, Pattern Recognition</li>
+                <li><strong>Project date</strong>: March, 2023</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/saadur1998/Kuzushiji-MNIST">Kuzushiji-MNIST Classification</a></li>
+                <li><strong>Technologies</strong>: Python, scikit-learn, PCA, Kernel PCA, MDS, k-Nearest Neighbors</li>
               </ul>
             </div>
           </div>
@@ -152,9 +159,9 @@
         <div class="container">  
           <div class="section-title">
             <h2>Introduction</h2>
-            <p>OpenAI DataBot is an interactive web application that leverages the power of OpenAI's language models to analyze and interpret datasets through natural language. This tool bridges the gap between complex data analysis and human understanding by allowing users to interact with their data using simple, conversational language.</p>
+            <p>The Kuzushiji-MNIST dataset presents a fascinating challenge in the field of computer vision and pattern recognition. It consists of handwritten Japanese characters (kuzushiji) from the Edo period (1603-1868), representing a more complex classification problem than the traditional MNIST dataset of handwritten digits.</p>
             <br>
-            <p>The application provides a user-friendly interface built with Streamlit, where users can upload their CSV datasets, input natural language queries about their data, and receive comprehensive, AI-generated responses. By combining the analytical capabilities of pandas with the natural language understanding of OpenAI's models, DataBot makes data exploration accessible to users regardless of their technical expertise in data analysis or programming.</p>
+            <p>This project explores various dimensionality reduction techniques and classification methods to accurately recognize these historical Japanese characters. By comparing approaches like Principal Component Analysis (PCA), Kernel PCA, and Multidimensional Scaling (MDS), the project demonstrates how advanced dimensionality reduction can significantly improve classification accuracy on complex image datasets.</p>
           </div>
         </div>
       </section><!-- End Introduction Section -->
@@ -166,14 +173,13 @@
             <h2>Objective</h2>
             <p>The primary objectives of this project were to:</p>
             <ul>
-              <li>Create an intuitive interface for data analysis that requires no coding knowledge from end users</li>
-              <li>Leverage OpenAI's language models to interpret and execute natural language queries on datasets</li>
-              <li>Build a system capable of generating insightful analyses and visualizations based on user questions</li>
-              <li>Implement a secure method for users to use their own OpenAI API keys with the application</li>
-              <li>Develop a responsive web application that can handle various dataset formats and sizes</li>
-              <li>Demonstrate the practical application of LangChain framework for creating AI-powered data analysis tools</li>
-              <li>Bridge the gap between complex data analysis techniques and non-technical users</li>
-              <li>Showcase how large language models can be used as reasoning engines for interpreting data</li>
+              <li>Implement and compare different dimensionality reduction techniques for image classification</li>
+              <li>Determine the optimal number of training samples for efficient model training</li>
+              <li>Evaluate the performance of various kernel functions in Kernel PCA</li>
+              <li>Identify the most effective classification approach for the Kuzushiji-MNIST dataset</li>
+              <li>Optimize hyperparameters to achieve maximum classification accuracy</li>
+              <li>Demonstrate the advantages of non-linear dimensionality reduction for complex image data</li>
+              <li>Create a comprehensive analysis pipeline for historical character recognition</li>
             </ul>
           </div>
         </div>
@@ -184,26 +190,60 @@
         <div class="container">
           <div class="section-title">
             <h2>Process</h2>
-            <p>The development of the OpenAI DataBot involved several key phases:</p>
+            <p>The development of this Kuzushiji-MNIST classification project involved several key phases:</p>
             <ul>
-              <li><strong>Requirement Analysis:</strong> Identified the need for a tool that enables non-technical users to analyze data through natural language</li>
-              <li><strong>Framework Selection:</strong> Chose Streamlit for its simplicity in building data applications and LangChain for its agent capabilities</li>
-              <li><strong>User Interface Design:</strong> Created a clean, intuitive sidebar form for user inputs including API key entry, file upload, and query input</li>
-              <li><strong>Backend Integration:</strong> Implemented the LangChain pandas DataFrame agent with OpenAI's ChatGPT model as the reasoning engine</li>
-              <li><strong>Data Processing:</strong> Set up pandas DataFrame handling for CSV file uploads with appropriate error handling</li>
-              <li><strong>OpenAI API Integration:</strong> Configured secure API key handling to protect user credentials while enabling model access</li>
-              <li><strong>Agent Configuration:</strong> Fine-tuned the pandas DataFrame agent to interpret queries correctly and generate relevant Python code</li>
-              <li><strong>Response Formatting:</strong> Implemented clean presentation of both the raw data and the AI-generated analysis</li>
-              <li><strong>Error Handling:</strong> Added robust error handling for API issues, malformed queries, and data processing problems</li>
-              <li><strong>Testing:</strong> Conducted extensive testing with various datasets and query types to ensure accuracy and responsiveness</li>
-              <li><strong>Application Deployment:</strong> Prepared the application for easy deployment on both local and cloud-based environments</li>
+              <li><strong>Data Acquisition and Exploration:</strong> Obtained the Kuzushiji-MNIST dataset and performed initial exploratory data analysis</li>
+              <li><strong>Data Preprocessing:</strong> Normalized and prepared the image data for dimensionality reduction</li>
+              <li><strong>Sample Size Optimization:</strong> Systematically tested different sample sizes (N) to determine the optimal training set size</li>
+              <li><strong>Dimensionality Reduction Implementation:</strong> Applied PCA, Kernel PCA with various kernels, and MDS to reduce the feature space</li>
+              <li><strong>Classification Model Development:</strong> Implemented k-Nearest Neighbors (kNN) classifier with various configurations</li>
+              <li><strong>Hyperparameter Tuning:</strong> Optimized the number of components for dimensionality reduction and k value for kNN</li>
+              <li><strong>Performance Evaluation:</strong> Generated confusion matrices and calculated accuracy metrics to assess model performance</li>
+              <li><strong>Comparative Analysis:</strong> Compared the performance of different dimensionality reduction techniques</li>
+              <li><strong>Results Visualization:</strong> Created visualizations to illustrate the effectiveness of different approaches</li>
+              <li><strong>Final Model Selection:</strong> Determined the optimal configuration based on comprehensive performance analysis</li>
             </ul>
           </div>
         </div>
       </section><!-- End Process Section -->
 
+      <!-- ======= Results Section ======= -->
+      <section id="results" class="results">
+        <div class="container">
+          <div class="section-title">
+            <h2>Results & Findings</h2>
+            <p>The project yielded several significant findings:</p>
+            <br>
+            <p><strong>Sample Size Optimization:</strong></p>
+            <ul>
+              <li>Initial broad range testing (1000-6000, step 1000)</li>
+              <li>Narrowed to 4000-6000 (step 100)</li>
+              <li>Further refined to 5000-6000 (step 10)</li>
+              <li>Final refinement to 5300-5400 (step 1)</li>
+              <li>Optimal sample size identified: N = 5358 with accuracy of 94.81%</li>
+            </ul>
+            <br>
+            <p><strong>Dimensionality Reduction Comparison:</strong></p>
+            <ul>
+              <li>Standard PCA showed reasonable performance but was limited in capturing non-linear relationships</li>
+              <li>Kernel PCA with cosine kernel significantly outperformed standard PCA</li>
+              <li>The optimal configuration used 72 components for Kernel PCA</li>
+              <li>MDS showed competitive results but was computationally more expensive</li>
+            </ul>
+            <br>
+            <p><strong>Classification Performance:</strong></p>
+            <ul>
+              <li>The k-Nearest Neighbors algorithm with k=3 provided the best classification results</li>
+              <li>The combination of Kernel PCA (cosine kernel, 72 components) and kNN (k=3) achieved 98.03% accuracy</li>
+              <li>This represents a significant improvement over baseline methods</li>
+              <li>The confusion matrix showed strong performance across all character classes</li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- End Results Section -->
+
       <!-- ======= Tools and Technologies Section ======= -->
-      <section id="tools-and-technologies" class="tools-and-technologies">
+      <section id="tools-and-technologies" class="tools-and-technologies section-bg">
         <div class="container">
           <div class="section-title">
             <h2>Tools and Technologies</h2>
@@ -211,9 +251,9 @@
             <br>
             <p>Platforms:</p>
             <ul>
-              <li>Streamlit (web application framework)</li>
-              <li>OpenAI API (language model access)</li>
-              <li>GitHub (version control and project hosting)</li>
+              <li>Google Colab</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
             </ul>
             <p>Programming Language:</p>
             <ul>
@@ -221,43 +261,43 @@
             </ul>
             <p>Libraries:</p>
             <ul>
-              <li>Streamlit</li>
-              <li>LangChain</li>
-              <li>LangChain Experimental (agent toolkits)</li>
+              <li>NumPy</li>
               <li>pandas</li>
-              <li>OpenAI Python SDK</li>
+              <li>scikit-learn</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>Jupyter Notebook</li>
             </ul>
      
-            <p>Techniques and Components:</p>
+            <p>Techniques and Algorithms:</p>
             <ul>
-              <li>LLM (Large Language Model) Integration</li>
-              <li>Agent-based Architecture</li>
-              <li>Natural Language Processing</li>
-              <li>Data Frame Analysis</li>
-              <li>Web-based User Interface</li>
-              <li>API Key Management</li>
-              <li>File Upload and Processing</li>
-              <li>Dynamic Query Handling</li>
+              <li>Principal Component Analysis (PCA)</li>
+              <li>Kernel Principal Component Analysis (Kernel PCA)</li>
+              <li>Multidimensional Scaling (MDS)</li>
+              <li>k-Nearest Neighbors (kNN) Classification</li>
+              <li>Cross-validation</li>
+              <li>Confusion Matrix Analysis</li>
+              <li>Hyperparameter Optimization</li>
             </ul>
           </div>
         </div>
       </section><!-- End Tools and Technologies Section -->
 
-      <!-- ======= Value Proposition Section ======= -->
-      <section id="value-proposition" class="value-proposition section-bg">
+      <!-- ======= Conclusion Section ======= -->
+      <section id="conclusion" class="conclusion">
         <div class="container">
           <div class="section-title">
-            <h2>Democratizing Data Analysis Through AI</h2>
-            <p>OpenAI DataBot represents a significant step toward democratizing data analysis by making it accessible through natural language. Traditional data analysis requires specialized knowledge of programming languages like Python and libraries like pandas, creating a high barrier to entry for non-technical users who need to extract insights from their data.</p>
+            <h2>Advanced Results with Dimensionality Reduction and Simple ML Model</h2>
+            <p>This project demonstrated the significant advantage of non-linear dimensionality reduction techniques for complex image classification tasks. The Kuzushiji-MNIST dataset, with its intricate historical Japanese characters, presented a challenging problem that standard approaches struggled to solve efficiently.</p>
             <br>
-            <p>The application demonstrates how large language models can serve as the interface between human intent and technical execution. Users can simply ask questions like "What's the correlation between column A and column B?" or "Show me a summary of the top 5 values in this dataset" without needing to know the underlying pandas commands or syntax.</p>
+            <p>The systematic optimization of sample size, dimensionality reduction technique, and classification parameters yielded an impressive 98.03% accuracy on the test set. Specifically, the combination of Kernel PCA with a cosine kernel (72 components) and a k-Nearest Neighbors classifier (k=3) proved most effective.</p>
             <br>
-            <p>By leveraging LangChain's agent framework, DataBot doesn't just return predefined analyses but actively reasons about the user's intent and generates appropriate code to answer their specific questions. This creates a powerful, flexible tool that can adapt to various datasets and query types without requiring reprogramming.</p>
+            <p>This work highlights the importance of selecting appropriate dimensionality reduction techniques based on the nature of the data. For complex image datasets like Kuzushiji-MNIST, techniques that can capture non-linear relationships between features (such as Kernel PCA) significantly outperform linear methods.</p>
             <br>
-            <p>The value of DataBot extends beyond simple convenience—it enables organizations to extract more value from their data by allowing all team members, regardless of technical background, to perform sophisticated analyses. This democratization of data analysis has the potential to drive better decision-making across all levels of an organization.</p>
+            <p>The methodical approach to optimization demonstrated in this project can serve as a template for tackling similar image classification challenges, particularly those involving historical or cultural artifacts where pattern recognition can aid in preservation and study.</p>
           </div>
         </div>
-      </section><!-- End Value Proposition Section -->
+      </section><!-- End Conclusion Section -->
 
   </main><!-- End #main -->
 
