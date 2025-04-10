@@ -415,6 +415,14 @@ document.querySelectorAll('.nav-menu .dropdown > a').forEach(link => {
         links: [
           { href: 'DataBot.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'mnist-classification-item': {
+        img: 'assets/img/portfolio/portfolio-9.jpg',
+        title: 'Kuzushiji-MNIST Classification',
+        description: 'Classification of ancient Japanese characters using dimensionality reduction techniques and KNN.',
+        links: [
+          { href: 'MNISTClassification.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
