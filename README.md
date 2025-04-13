@@ -12,13 +12,13 @@ This repository contains my personal website, which showcases my work and profes
 - **Resume:** My CV.
 - **Skills:** Showcases my technical and analytical expertise.
 - **Contact Form:** Easy way to reach out to me directly from the website.
-- **Meeting** Easy wasy to directly schedlue Gmeet call. 
+- **Meeting Scheduler:** Easy wasy to directly schedlue Gmeet call. 
 
 ## Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript.
 - **Hosting:** GitHub Pages.
 - **Backend:** AWS SES, AWS Lambda, AWS API Gateway, FetchAPI, Calendly.
-- **Analytics** Google Analytics
+- **Analytics:** Google Analytics
 
 ## Future Enhancements  
 - Optimize website performance and SEO.
