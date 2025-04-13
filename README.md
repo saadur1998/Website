@@ -8,9 +8,10 @@ This repository contains my personal website, which showcases my work and profes
 ## Features  
 - **Bio:** A brief introduction about me  
 - **Portfolio:** Highlights my Data Science, ML and Applied AI projects.
-- **Portfolio Detail Pages:** Details about my individual projects.  
-- **Resume:** My CV.
+- **Portfolio Detail Pages:** Details about my individual projects.
+- **Certification:** My professional certifications and their link.
 - **Skills:** Showcases my technical and analytical expertise.
+- **Resume:** My Resume. Also an option do download a pdf version.
 - **Contact Form:** Easy way to reach out to me directly from the website.
 - **Meeting Scheduler:** Easy wasy to directly schedlue Gmeet call. 
 
