@@ -11,18 +11,19 @@ This repository contains my personal website, which showcases my work and profes
 - **Portfolio Detail Pages:** Details about my individual projects.  
 - **Resume:** My CV.
 - **Skills:** Showcases my technical and analytical expertise.
-- **Contact Form:** Easy way to reach out to me directly from the website.  
+- **Contact Form:** Easy way to reach out to me directly from the website.
+- **Meeting** Easy wasy to directly schedlue Gmeet call. 
 
 ## Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript.
 - **Hosting:** GitHub Pages.
-- **Backend:** AWS SES, AWS Lambda, AWS API Gateway, FetchAPI.
+- **Backend:** AWS SES, AWS Lambda, AWS API Gateway, FetchAPI, Calendly.
+- **Analytics** Google Analytics
 
 ## Future Enhancements  
 - Optimize website performance and SEO.
 - Add a blog section for sharing insights on Data Science & ML.
 - Improve responsiveness and accessibility.
-- Add a direct Gmeet/Zoom meeting scheduler.
 
 ## How to Use  
 1. Clone this repository:  
