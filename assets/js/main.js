@@ -426,6 +426,14 @@ document.querySelectorAll('.nav-menu .dropdown > a').forEach(link => {
         links: [
           { href: 'MNISTClassification.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
         ]
+      },
+      'SentinelGreen-item': {
+        img: 'assets/img/portfolio/sentinelgreen.jpg',
+        title: 'SentinelGreen: AI Agent System',
+        description: 'A multi-agent system for sustainable and secure data center management.',
+        links: [
+          { href: 'SentinelGreen.html', title: 'View Details', icon: '<i class="bx bx-plus"></i>' }
+        ]
       }
     };
     
