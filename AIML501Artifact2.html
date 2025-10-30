@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C03X9XY459"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C03X9XY459');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AIML501-Artifact 2: Neural Networks</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Saad Ur Rahman</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/saadurrahman/" class="linkedin" title="Connect with me on LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/saadur1998" class="twitter" title="Check out my GitHub repositories"><i class="bx bxl-github"></i></a>
+          <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake" title="View my profile on Handshake"><i class="bi bi-mortarboard"></i></a>
+          <a href="https://www.amazon.com/Visions-Fog-Glimpse-into-Heart/dp/164678958X" class="amazon" title="Read my poetry book on Amazon"><i class="bx bxl-amazon"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li class="dropdown"><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="SentinelGreen.html" data-portfolio-id="SentinelGreen-item">SentinelGreen: AI Agent System</a></li>
+                <li><a href="CrimeDataAnalysis.html" data-portfolio-id="crime-data-item">Crime Data Analysis</a></li>
+                <li><a href="DriveBerry.html" data-portfolio-id="driveberry-item">DriveBerry</a></li>
+                <li><a href="Covid.html" data-portfolio-id="covid-item">COVID-19 Radiography</a></li>
+                <li><a href="JobApplicationAnalysis.html" data-portfolio-id="job-application-item">Job Application Analysis</a></li>
+                <li><a href="TextToCanvas.html" data-portfolio-id="text2canvas-item">Text2Canvas</a></li>
+                <li><a href="RecommendationSystem.html" data-portfolio-id="recommendation-system-item">Recommendation Systems</a></li>
+                <li><a href="FeatureExtraction.html" data-portfolio-id="feature-extraction-item">Feature Extraction</a></li>
+                <li><a href="DataBot.html" data-portfolio-id="databot-item">OpenAI DataBot</a></li>
+                <li><a href="MNISTClassification.html" data-portfolio-id="mnist-classification-item">Kuzushiji-MNIST Classification</a></li>
+                <li><a href="WebBuilder.html" data-portfolio-id="webbuilder-item">WebBuilder 1.0</a></li>
+              </ul>
+            </li>
+          <li><a href="index.html#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
+          <li><a href="index.html#facts" class="nav-link scrollto"><i class="bx bx-check-square"></i> <span>Facts</span></a></li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bx bxl-graphql"></i> <span>Skills</span></a></li>
+          <li class="dropdown"><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="assets/pdf/saad_cv.pdf" target="_blank">Download Resume</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Neural Network Components</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>AIML501-Artifact 2: Neural Networks</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Neural Network Presentation Section ======= -->
+    <section id="nn-presentation" class="portfolio-details">
+      <div class="full-width-jist" style="width:100%;background:#f8f9fa;padding:20px 0;border-bottom:1px solid #e9ecef;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 18px;">
+          <div class="section-title">
+            <h2>Introductions</h2>
+          </div>
+          <p style="margin:8px 0 6px;"><strong>Artifact configuration:</strong> AIML501 Artifact 2 — Neural Network Components (created October, 2025). This artifact is formatted as a portfolio presentation.</p>
+          <p style="margin:6px 0 0;"><strong>How to read the presentation:</strong> Each component is defined and illustrated. There is a Diagram visualizing a neural network with its components explained in the section below.</p>
+        </div>
+      </div>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Neural Network Diagram</h2>
+              <p class="lead">Diagram / flowchart (add image here). The diagram should show input → hidden layers → output and annotation for components.</p>
+            </div>
+
+            <!-- Neural network diagram image (user-supplied) -->
+            <div style="width:100%;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#fff;margin-bottom:18px;padding:12px;border:1px solid #f0f0f0;">
+              <a href="assets/img/portfolio/nndiagram.png" target="_blank" rel="noopener noreferrer" style="display:inline-block;max-width:100%;">
+                <img src="assets/img/portfolio/nndiagram.png" alt="Neural network diagram: input layer, two hidden layers, and output layer with annotated components (weights, activations, loss)." style="display:block;max-width:100%;height:auto;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.06);" />
+              </a>
+            </div>
+
+            <div class="section-title">
+              <h2>Components — Definitions & Explanations</h2>
+              <p class="lead">Key neural network components and their roles.</p>
+            </div>
+
+            <!-- Components list -->
+            <div class="components-list">
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Layers</h4>
+                <p>Definition: Stacked groups of neurons arranged as input, hidden, and output layers.</p>
+                <p>Role: Organize computation stages; each layer transforms its inputs for the next layer.</p>
+              </div>
+
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Neurons</h4>
+                <p>Definition: Computational units that take inputs, apply weights and bias, and produce an output via an activation function.</p>
+                <p>Role: Perform localized computation and introduce nonlinearity when paired with activation functions.</p>
+              </div>
+
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Weights</h4>
+                <p>Definition: Trainable parameters that scale inputs between neurons.</p>
+                <p>Role: Determine the influence of one neuron on another; updated during training to reduce loss.</p>
+              </div>
+
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Activation Functions</h4>
+                <p>Definition: Functions applied to a neuron's weighted sum (e.g., sigmoid, ReLU, tanh, softmax).</p>
+                <p>Role: Introduce nonlinearity allowing networks to model complex relationships; softmax converts outputs to probabilities for classification.</p>
+              </div>
+
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Loss Functions</h4>
+                <p>Definition: A scalar measure of error between predicted outputs and true targets (e.g., MSE, cross-entropy).</p>
+                <p>Role: Guides training by providing a quantity to minimize via optimization algorithms.</p>
+              </div>
+
+              <div class="card" style="width:100%;padding:14px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:12px;">
+                <h4>Optimization Algorithms</h4>
+                <p>Definition: Methods that update network weights to minimize the loss (e.g., SGD, Adam, RMSProp).</p>
+                <p>Role: Adjust weights iteratively using gradients to converge to a (local) minimum of the loss function.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Assignment: Requirements, Accessibility & Reflection ======= -->
+    <section id="assignment" class="assignment">
+      <div class="container">
+        <div class="section-title">
+          <h2>Assignment Reflection</h2>
+          <p>This artifact documents core neural network components and a visual presentation designed for instructors.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="reflection-text" style="background:#fff;border:1px solid #e6e6e6;padding:16px;border-radius:8px;">
+              <p>Creating this neural network visual presentation deepened my practical understanding of how model components interact. Building the diagram placeholder and composing concise component descriptions forced me to distill complex concepts layers, neurons, weights, activation functions, loss functions, and optimizers, into clear, teachable statements. That exercise highlighted the balance between precision and readability required for effective instructional artifacts.</p>
+
+              <p>A key insight was how visualization makes abstract operations concrete: showing data flow across layers clarifies where weights are applied, where activations introduce nonlinearity, and where the loss is computed for optimization. This helped me better appreciate architectural choices (e.g., depth vs width, activation selection) and practical trade-offs like interpretability, training stability, and computational cost.</p>
+
+              <p>Overall, the process reinforced core concepts and improved my ability to communicate them visually, a valuable skill for both teaching and presenting model architecture choices in real projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
