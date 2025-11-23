@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C03X9XY459"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C03X9XY459');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AIML501-Artifact 4: Explainable AI & Model Transparency</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Saad Ur Rahman</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/saadurrahman/" class="linkedin" title="Connect with me on LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/saadur1998" class="twitter" title="Check out my GitHub repositories"><i class="bx bxl-github"></i></a>
+          <a href="https://app.joinhandshake.com/stu/users/50656739" class="handshake" title="View my profile on Handshake"><i class="bi bi-mortarboard"></i></a>
+          <a href="https://www.amazon.com/Visions-Fog-Glimpse-into-Heart/dp/164678958X" class="amazon" title="Read my poetry book on Amazon"><i class="bx bxl-amazon"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li class="dropdown"><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="SentinelGreen.html" data-portfolio-id="SentinelGreen-item">SentinelGreen: AI Agent System</a></li>
+                <li><a href="CrimeDataAnalysis.html" data-portfolio-id="crime-data-item">Crime Data Analysis</a></li>
+                <li><a href="DriveBerry.html" data-portfolio-id="driveberry-item">DriveBerry</a></li>
+                <li><a href="Covid.html" data-portfolio-id="covid-item">COVID-19 Radiography</a></li>
+                <li><a href="JobApplicationAnalysis.html" data-portfolio-id="job-application-item">Job Application Analysis</a></li>
+                <li><a href="TextToCanvas.html" data-portfolio-id="text2canvas-item">Text2Canvas</a></li>
+                <li><a href="RecommendationSystem.html" data-portfolio-id="recommendation-system-item">Recommendation Systems</a></li>
+                <li><a href="FeatureExtraction.html" data-portfolio-id="feature-extraction-item">Feature Extraction</a></li>
+                <li><a href="DataBot.html" data-portfolio-id="databot-item">OpenAI DataBot</a></li>
+                <li><a href="MNISTClassification.html" data-portfolio-id="mnist-classification-item">Kuzushiji-MNIST Classification</a></li>
+                <li><a href="WebBuilder.html" data-portfolio-id="webbuilder-item">WebBuilder 1.0</a></li>
+              </ul>
+            </li>
+          <li><a href="index.html#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
+          <li><a href="index.html#facts" class="nav-link scrollto"><i class="bx bx-check-square"></i> <span>Facts</span></a></li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bx bxl-graphql"></i> <span>Skills</span></a></li>
+          <li class="dropdown"><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="assets/pdf/saad_cv.pdf" target="_blank">Download Resume</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Explainable AI & Model Transparency</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>AIML501-Artifact 4: Explainable AI</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Introduction Section ======= -->
+    <section id="introduction" class="portfolio-details">
+      <div class="full-width-jist" style="width:100%;background:#f8f9fa;padding:20px 0;border-bottom:1px solid #e9ecef;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 18px;">
+          <div class="section-title">
+            <h2>Introduction</h2>
+          </div>
+          <p style="margin:8px 0 6px;"><strong>Artifact configuration:</strong> AIML501 Artifact 4 — Explainable AI & Model Transparency (created 2025). This artifact is formatted as a visual infographic presentation.</p>
+          <p style="margin:6px 0 0;"><strong>How to read the presentation:</strong> This infographic illustrates the importance of explainable AI, challenges in achieving transparency, validation metrics, and current solutions being implemented by industry leaders to improve model interpretability and trust.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Overview</h2>
+              <p class="lead">Generative AI models, particularly large language models, are powerful yet fundamentally opaque. Their decision-making processes are distributed across millions or billions of parameters, creating challenges that persist even as technology advances. This visual artifact explores explainability, its importance, challenges, and solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Explainable AI & Its Importance Section ======= -->
+    <section id="explainable-ai" class="explainable-ai section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Explainable AI & Its Importance</h2>
+          <p class="lead">Understanding why transparency in AI is critical for trust, accountability, and effective deployment</p>
+        </div>
+
+        <!-- Main Infographic Placeholder -->
+        <div class="row gy-4 mb-4">
+          <div class="col-12">
+            <div style="width:100%;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#fff;margin-bottom:18px;padding:12px;border:1px solid #f0f0f0;">
+              <a href="assets/img/portfolio/artifact4-1.png" data-glightbox="type: image" class="glightbox" style="display:inline-block;max-width:100%;">
+                <img src="assets/img/portfolio/artifact4-1.png" alt="Explainable AI & Its Importance" style="display:block;max-width:100%;height:auto;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Points -->
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#2c3e50;margin-bottom:12px;"><i class="bi bi-shield-check" style="margin-right:8px;"></i>Building Trust</h4>
+              <p>Transparency in AI decision-making processes builds user confidence and trust. When users understand how and why an AI system makes decisions, they are more likely to accept and rely on its outputs, especially in critical applications like healthcare, finance, and legal systems.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#2c3e50;margin-bottom:12px;"><i class="bi bi-clipboard-check" style="margin-right:8px;"></i>Regulatory Compliance</h4>
+              <p>Many jurisdictions require AI systems to provide explanations for their decisions, particularly in regulated industries. Explainable AI helps organizations meet legal requirements such as GDPR's "right to explanation" and ensures compliance with industry-specific regulations.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#2c3e50;margin-bottom:12px;"><i class="bi bi-bug" style="margin-right:8px;"></i>Debugging & Improvement</h4>
+              <p>Understanding model behavior enables developers to identify errors, biases, and areas for improvement. Explainable AI provides insights into model failures, allowing for targeted fixes and continuous enhancement of system performance.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e3e3e3;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#2c3e50;margin-bottom:12px;"><i class="bi bi-people" style="margin-right:8px;"></i>User Empowerment</h4>
+              <p>When users understand AI reasoning, they can make informed decisions about when to trust or question AI outputs. This empowerment is crucial for human-AI collaboration and ensures that AI serves as a tool that augments rather than replaces human judgment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Challenges in Explainability Section ======= -->
+    <section id="challenges" class="challenges">
+      <div class="container">
+        <div class="section-title">
+          <h2>Challenges in Explainability</h2>
+          <p class="lead">Common obstacles that make AI transparency difficult to achieve</p>
+        </div>
+
+
+        <!-- Challenge Details -->
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e74c3c;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#e74c3c;margin-bottom:12px;"><i class="bi bi-box" style="margin-right:8px;"></i>Opacity and Complexity</h4>
+              <p>Generative AI systems operate as "black boxes," where no single component fully explains the output. Decisions emerge from complex, non-linear interactions across millions or billions of parameters that resist straightforward interpretation. This distributed and dynamic internal structure makes it challenging to trace how inputs lead to outputs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e74c3c;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#e74c3c;margin-bottom:12px;"><i class="bi bi-clock-history" style="margin-right:8px;"></i>Post-Hoc Explanations and Trustworthiness</h4>
+              <p>Explanations often come after the decision and may not accurately reflect the model's true internal reasoning. This gap between the explanation and actual model behavior can undermine trust, especially when explanations are generated separately from the decision-making process. This challenge is expected to persist even as models grow more sophisticated.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e74c3c;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#e74c3c;margin-bottom:12px;"><i class="bi bi-database-exclamation" style="margin-right:8px;"></i>Data Quality and Bias</h4>
+              <p>Models trained on vast datasets inherently reflect any imperfections, such as biases or noise, within those datasets. Ensuring data quality and representativeness remains crucial, as biases in outputs will continue to be a significant concern. These biases can be subtle and difficult to detect without thorough analysis.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #e74c3c;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#e74c3c;margin-bottom:12px;"><i class="bi bi-file-earmark-text" style="margin-right:8px;"></i>Regulatory Issues</h4>
+              <p>Different jurisdictions have varying requirements for AI explainability, creating compliance challenges for organizations operating globally. The lack of standardized regulations and the evolving nature of AI technology make it difficult to establish consistent explainability frameworks across industries and regions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Validation & Performance Metrics Section ======= -->
+    <section id="validation-metrics" class="validation-metrics section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Validation & Performance Metrics</h2>
+          <p class="lead">How metrics assess model reliability and contribute to overall trust in AI</p>
+        </div>
+
+        <!-- Metrics Infographic Placeholder -->
+        <div class="row gy-4 mb-4">
+          <div class="col-12">
+            <div style="width:100%;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#fff;margin-bottom:18px;padding:12px;border:1px solid #f0f0f0;">
+              <a href="assets/img/portfolio/artifact4-2.png" data-glightbox="type: image" class="glightbox" style="display:inline-block;max-width:100%;">
+                <img src="assets/img/portfolio/artifact4-2.png" alt="Validation & Performance Metrics" style="display:block;max-width:100%;height:auto;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metric Categories -->
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #3498db;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#3498db;margin-bottom:12px;"><i class="bi bi-speedometer2" style="margin-right:8px;"></i>Performance Metrics</h4>
+              <p><strong>Accuracy, Precision, Recall:</strong> Traditional metrics that measure how well the model performs on its primary task. These metrics provide baseline confidence in model outputs.</p>
+              <p><strong>F1-Score:</strong> Harmonic mean of precision and recall, providing a balanced measure of model performance.</p>
+              <p><strong>Contribution to Trust:</strong> High performance metrics indicate reliable outputs, building foundational trust in the model's capabilities.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #3498db;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#3498db;margin-bottom:12px;"><i class="bi bi-shield-check" style="margin-right:8px;"></i>Fairness & Bias Metrics</h4>
+              <p><strong>Demographic Parity:</strong> Ensures equal outcomes across different groups, detecting potential discrimination.</p>
+              <p><strong>Equalized Odds:</strong> Measures whether the model performs equally well across different demographic groups.</p>
+              <p><strong>Contribution to Trust:</strong> Fairness metrics ensure equitable treatment, which is essential for ethical AI deployment and user trust.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #3498db;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#3498db;margin-bottom:12px;"><i class="bi bi-eye" style="margin-right:8px;"></i>Explainability Metrics</h4>
+              <p><strong>Faithfulness:</strong> Measures how accurately explanations reflect the model's actual decision process.</p>
+              <p><strong>Completeness:</strong> Assesses whether explanations cover all relevant factors in the decision.</p>
+              <p><strong>Contribution to Trust:</strong> High explainability scores indicate that users can genuinely understand and verify model reasoning, enhancing trustworthiness.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #3498db;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#3498db;margin-bottom:12px;"><i class="bi bi-check-circle" style="margin-right:8px;"></i>Robustness Metrics</h4>
+              <p><strong>Adversarial Robustness:</strong> Measures model stability against malicious inputs or edge cases.</p>
+              <p><strong>Consistency:</strong> Evaluates whether similar inputs produce similar outputs, indicating predictable behavior.</p>
+              <p><strong>Contribution to Trust:</strong> Robust models demonstrate reliability under various conditions, increasing confidence in real-world deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Current Solutions & Techniques Section ======= -->
+    <section id="solutions" class="solutions">
+      <div class="container">
+        <div class="section-title">
+          <h2>Current Solutions & Techniques</h2>
+          <p class="lead">Approaches and strategies being implemented by industry leaders to improve explainability</p>
+        </div>
+
+
+        <!-- Solution Techniques -->
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #27ae60;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#27ae60;margin-bottom:12px;"><i class="bi bi-eye" style="margin-right:8px;"></i>Attention Visualization</h4>
+              <p>Visualization tools illustrate which inputs models prioritize, offering insights into their internal processes. These tools highlight the parts of the input that most influence the model's decision, making it easier to understand model behavior. As models evolve, refining these visualizations can further enhance transparency and understanding.</p>
+              <p><strong>Industry Application:</strong> Used by companies like OpenAI and Google to provide interpretability in transformer models, helping users see what the model "focuses on" when generating outputs.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #27ae60;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#27ae60;margin-bottom:12px;"><i class="bi bi-search" style="margin-right:8px;"></i>Probing and Internal Analysis</h4>
+              <p>Probing techniques analyze model internals to understand how information is represented and processed. By examining hidden states and activations, researchers can map model knowledge and identify potential biases or failure modes. This technique helps reveal what models have learned and how they organize information.</p>
+              <p><strong>Industry Application:</strong> Research labs use probing to understand model representations, enabling better debugging and improvement of model architectures.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #27ae60;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#27ae60;margin-bottom:12px;"><i class="bi bi-diagram-3" style="margin-right:8px;"></i>Chain-of-Thought Prompting</h4>
+              <p>Encouraging models to "think aloud" through step-by-step reasoning reveals their internal logic. Modern AI tools provide built-in reasoning or explanations that users can access by explicitly asking the model to explain its thought process. Leveraging these freely available platforms helps users gain deeper insights into AI reasoning.</p>
+              <p><strong>Industry Application:</strong> Companies like Anthropic (Claude) and OpenAI (GPT-4) have integrated reasoning capabilities, allowing users to request explanations and see the model's step-by-step thinking process.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #27ae60;background:#fff;margin-bottom:16px;height:100%;">
+              <h4 style="color:#27ae60;margin-bottom:12px;"><i class="bi bi-shield-check" style="margin-right:8px;"></i>Interpretable Model Architectures</h4>
+              <p>Some organizations are developing inherently interpretable models or adding interpretability layers to existing architectures. These approaches build explainability directly into the model design rather than adding it as a post-processing step, resulting in more faithful explanations.</p>
+              <p><strong>Industry Application:</strong> Research initiatives focus on creating models with built-in transparency, such as attention mechanisms that are naturally interpretable or models with explicit reasoning modules.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="card" style="width:100%;padding:18px;border-radius:8px;border:1px solid #27ae60;background:#fff;margin-bottom:16px;">
+              <h4 style="color:#27ae60;margin-bottom:12px;"><i class="bi bi-people" style="margin-right:8px;"></i>Human-in-the-Loop Validation</h4>
+              <p>Incorporating human experts to validate and interpret model outputs ensures that explanations are meaningful and accurate. This approach combines automated explainability techniques with human judgment, creating a feedback loop that improves both model performance and explanation quality.</p>
+              <p><strong>Industry Application:</strong> Many organizations use human reviewers to validate model explanations, particularly in high-stakes applications like medical diagnosis or legal analysis, ensuring that explanations meet domain expert standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Assignment Reflection Section ======= -->
+    <section id="assignment" class="assignment">
+      <div class="container">
+        <div class="section-title">
+          <h2>Assignment Reflection</h2>
+          <p>This artifact documents explainable AI concepts, challenges, and solutions through a comprehensive visual presentation designed for varied audiences.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="reflection-text" style="background:#fff;border:1px solid #e6e6e6;padding:20px;border-radius:8px;">
+              <p>Creating this visual artifact on explainable AI helped me understand why transparency matters in artificial intelligence systems. Through research, I learned that explainability is not just a technical feature. It is a basic requirement for building trustworthy AI that can be safely used in real applications. I also learned about the challenges, such as the opacity of complex neural networks and the difficulty of creating accurate explanations after decisions are made. These challenges show why explainability is still an active area of research.</p>
+
+              <p>I explored how validation and performance metrics work together to build trust in AI systems. Performance metrics show basic confidence in the model. Fairness metrics ensure ethical use. Explainability metrics check transparency. Robustness metrics confirm reliability under different conditions. This multi-dimensional approach is needed to create AI systems that users can trust and rely on.</p>
+
+              <p>I learned about current solutions and techniques, especially attention visualization and chain-of-thought prompting. These show how industry leaders are solving explainability challenges. Modern AI platforms now include reasoning capabilities, which makes AI reasoning easier for users to understand. This artifact serves as both an educational resource and a reference for understanding how explainability, validation, and performance metrics work together to create trustworthy AI systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
